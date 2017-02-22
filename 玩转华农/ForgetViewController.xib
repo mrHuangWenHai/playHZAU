@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgetViewController">
+            <connections>
+                <outlet property="accountName" destination="T6w-Vq-VQa" id="n9S-b5-2N1"/>
+                <outlet property="finshButtom" destination="Pmb-Ao-9yz" id="00I-7I-Aex"/>
+                <outlet property="firstPassword" destination="Nd0-c0-BKE" id="doc-Pp-0Pa"/>
+                <outlet property="secondPassword" destination="ed8-YZ-RWb" id="MzA-za-o22"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的账户" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6w-Vq-VQa">
+                    <rect key="frame" x="20" y="141" width="560" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ucT-z7-nfd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入新密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-c0-BKE">
+                    <rect key="frame" x="20" y="207" width="560" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="But-Eg-1BZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请重新输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-YZ-RWb">
+                    <rect key="frame" x="20" y="273" width="560" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FmM-GB-3b1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-Ao-9yz">
+                    <rect key="frame" x="157" y="372" width="286" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HAJ-Sj-Yj8"/>
+                        <constraint firstAttribute="width" constant="286" id="Kaa-Kn-GXy"/>
+                    </constraints>
+                    <state key="normal" title="完成"/>
+                    <connections>
+                        <action selector="finsh:" destination="-1" eventType="touchUpInside" id="gB0-Hu-r26"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T6w-Vq-VQa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6wK-N1-Ywz"/>
+                <constraint firstAttribute="trailing" secondItem="Nd0-c0-BKE" secondAttribute="trailing" constant="20" id="ES5-5O-rpa"/>
+                <constraint firstItem="T6w-Vq-VQa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="141" id="Pzf-EK-FVa"/>
+                <constraint firstAttribute="trailing" secondItem="T6w-Vq-VQa" secondAttribute="trailing" constant="20" id="T3a-Xm-izF"/>
+                <constraint firstItem="ed8-YZ-RWb" firstAttribute="top" secondItem="Nd0-c0-BKE" secondAttribute="bottom" constant="26" id="VgT-5E-veS"/>
+                <constraint firstItem="Pmb-Ao-9yz" firstAttribute="top" secondItem="ed8-YZ-RWb" secondAttribute="bottom" constant="59" id="WCW-kz-nVh"/>
+                <constraint firstItem="Nd0-c0-BKE" firstAttribute="top" secondItem="T6w-Vq-VQa" secondAttribute="bottom" constant="26" id="ZMq-eG-ecM"/>
+                <constraint firstItem="Nd0-c0-BKE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="cFL-sR-n8D"/>
+                <constraint firstItem="Pmb-Ao-9yz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iJH-dO-gG0"/>
+                <constraint firstAttribute="trailing" secondItem="ed8-YZ-RWb" secondAttribute="trailing" constant="20" id="qTl-En-v1v"/>
+                <constraint firstItem="ed8-YZ-RWb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="xTJ-3F-uqZ"/>
+            </constraints>
+            <point key="canvasLocation" x="404" y="180"/>
+        </view>
+    </objects>
+</document>
